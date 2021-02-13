@@ -12,7 +12,9 @@
 - Compiling the project with ARM GCC
 - Flashing the board using STM32CubeProg
 
-## Prob devices
+## FLASH THE BOARD
+
+### Prob devices
 
 ```
  ./STM32_Programmer_CLI -l
@@ -43,7 +45,7 @@ Description: STLINK-V3
 Manufacturer: STMicroelectronics
 ```
 
-## Connecting with STM32CubeProg
+### Connecting with STM32CubeProg
 
 ```
  ./STM32_Programmer_CLI -c port=SWD
@@ -66,7 +68,7 @@ Device type : MCU
 Device CPU  : Cortex-M7
 ```
 
-## Flash the board
+### Flashing the board
 
 You can flash the board with the binary file you compiled (assuming `LEDBlink.bin` is the file).
 
