@@ -1,1 +1,68 @@
-# nucleojournal
+# Experiments with Nucleo H743ZI2
+
+## required tools
+
+- ARM GCC Compiler Toolchain
+- STM32CubeMX
+- STM32CubeProgrammer
+ 
+## What I did
+ 
+- Generating a Makefile Project using STM32CubeMX
+- Compiling the project with ARM GCC
+- Flashing the board using STM32CubeProg
+
+## Prob devices
+
+```
+ ./STM32_Programmer_CLI -l
+      -------------------------------------------------------------------
+                        STM32CubeProgrammer v2.6.0                  
+      -------------------------------------------------------------------
+
+=====  DFU Interface   =====
+
+No STM32 device in DFU mode connected
+
+===== STLink Interface =====
+
+-------- Connected ST-LINK Probes List --------
+
+ST-Link Probe 0 :
+   ST-LINK SN  : 004400323438511134313939
+   ST-LINK FW  : V3J5M2
+-----------------------------------------------
+
+=====  UART Interface  =====
+
+Total number of serial ports available: 1
+
+Port: ttyACM0
+Location: /dev/ttyACM0
+Description: STLINK-V3
+Manufacturer: STMicroelectronics
+```
+
+## Connecting with STM32CubeProg
+
+```
+ ./STM32_Programmer_CLI -c port=SWD
+      -------------------------------------------------------------------
+                        STM32CubeProgrammer v2.6.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 004400323438511134313939
+ST-LINK FW  : V3J5M2
+Board       : NUCLEO-H743ZI
+Voltage     : 3.30V
+SWD freq    : 24000 KHz
+Connect mode: Normal
+Reset mode  : Software reset
+Device ID   : 0x450
+Revision ID : Rev V
+Device name : STM32H7xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M7
+```
+
