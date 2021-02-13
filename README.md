@@ -12,6 +12,18 @@
 - Compiling the project with ARM GCC
 - Flashing the board using STM32CubeProg
 
+## GENERATE THE PROJECT SOURCE CODE
+
+The STM32CubeMX tool can be use to generate a Makefile project ready to use. I made one (LEDBlink).
+
+## COMPILING THE PROJECT
+
+From the project folder, we can run `make`.
+We might need to specify the location of the ARM GCC Toolchain with `GCC_PATH=/path/to/arm/gcc/`.
+
+The result is a binary: `build/LEDBlink.bin`
+
+
 ## FLASH THE BOARD
 
 ### Prob devices
